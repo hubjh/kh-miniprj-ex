@@ -1,13 +1,13 @@
-// 로그인 페이지
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Modal from "../utils/Modal";
 import imgLogo from "../images/tier_logo.png";
-import imgBottom from "../images/nedbank_s.png";
 import AxiosApi from "../api/AxiosApi";
 import { Input, Button, Container, Items } from "../component/LoginComponent";
+import imgBottom from "../images/nedbank_s.png";
 
 const Login = () => {
-  const navigate = useNavigate(); // 화면 이동을 위해서 사용하는 hook
+  const navigate = useNavigate();
 
   // 키보드 입력
   const [inputId, setInputId] = useState("");
@@ -52,7 +52,6 @@ const Login = () => {
       setIsPw(true);
     }
   };
-
   const onClickLogin = async () => {
     //로그인을 위한 axios 호출
     const res = await AxiosApi.memberLogin(inputId, inputPw);
@@ -99,9 +98,9 @@ const Login = () => {
           <Button disabled>SIGN IN</Button>
         )}
       </Items>
-      {/* <Modal open={modalOpen} close={closeModal} header="오류">
+      <Modal open={modalOpen} close={closeModal} header="오류">
         아이디 및 패스워드를 재확인해 주세요.
-      </Modal> */}
+      </Modal>
       <Items className="signup">
         <Link to="/Signup" className="link_style">
           <span>Sign Up</span>
@@ -113,5 +112,4 @@ const Login = () => {
     </Container>
   );
 };
-
 export default Login;
