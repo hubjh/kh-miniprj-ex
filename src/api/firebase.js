@@ -2,13 +2,13 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDqc3jZo2Kj2bgAVgxTC9su0P1N9kLe-Hg",
-  authDomain: "kh-mini-project.firebaseapp.com",
-  projectId: "kh-mini-project",
-  storageBucket: "kh-mini-project.appspot.com",
-  messagingSenderId: "106733687469",
-  appId: "1:106733687469:web:f094788d000284bafa6c24",
-  measurementId: "G-1RW6SQ37MW",
+  apiKey: "AIzaSyBNpbHHzBSKmNGEpsl5UJ4mLtyhXEyCofI",
+  authDomain: "kh-mini-project-aff39.firebaseapp.com",
+  projectId: "kh-mini-project-aff39",
+  storageBucket: "kh-mini-project-aff39.appspot.com",
+  messagingSenderId: "445178285463",
+  appId: "1:445178285463:web:83974d5e5283edc87ec8d2",
+  measurementId: "G-EVT200KBT2",
 };
 
 // Initialize Firebase
