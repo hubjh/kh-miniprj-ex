@@ -15,6 +15,7 @@ const AxiosApi = {
     return await axios.get(KH_DOMAIN + `/users/member/?id=${id}`);
   },
 
+  //
   // 회원 가입
   memberReg: async (id, pwd, name, mail) => {
     const member = {
